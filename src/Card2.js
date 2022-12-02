@@ -6,7 +6,7 @@ import Text4 from "./Text4"
 
 export default function Card2(props) {
     return(
-        <div className='container' style={div}>
+        <div className='container2' style={div}>
             <Paymentimg />
             <Selected rate={props.rate}/>
             <Text3 />
