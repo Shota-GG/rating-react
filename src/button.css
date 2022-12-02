@@ -1,0 +1,17 @@
+button {
+    width: 370px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: rgba(252, 118, 20, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    /* margin-left: 32px; */
+    cursor: pointer;
+}
+button:hover {
+    background-color: #FFFFFF;
+    color: rgba(252, 118, 20, 1);
+}

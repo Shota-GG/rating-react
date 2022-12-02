@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import './reset.css';
 import './App.css';
+import Card1 from './Card1';
+import Card2 from './Card2';
+
+import { useState } from 'react';
+import React from 'react'
+
 
 function App() {
+  
+  const[isClicked, setIsClicked] = useState(false)
+  const [clicked , setClicked] = useState(false)
+  const[rate, setRate] = useState(null)
+
+  function click(num){
+   setRate(num)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      {clicked ? <Card2 rate={rate} /> : <Card1  change={()=>setClicked(true)} click={click} isClicked={isClicked} rate={rate} />}
+    </body>
+    
   );
 }
 

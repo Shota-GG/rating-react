@@ -1,0 +1,14 @@
+.rate {
+    /* width: 341px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* margin-left: 32px; */
+    margin-right: 39px;
+    margin-top: 24px;
+}
+#active {
+    background-color: #7C8798;
+    color: #FFFFFF;
+}

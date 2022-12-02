@@ -1,0 +1,16 @@
+
+.rating button {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: rgba(38, 46, 56, 1);
+    color: rgba(124, 135, 152, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.rating button:hover {
+    background-color: #FC7614;
+    color: rgba(255, 255, 255, 1);
+}
